@@ -151,5 +151,11 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: 'static/favicon.svg'
+      }
+    },
   ].filter(Boolean),
 }
