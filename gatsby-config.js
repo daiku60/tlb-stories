@@ -43,6 +43,10 @@ module.exports = {
             url: `https://twitter.com/theleftbit`,
           },
           {
+            name: `Github`,
+            url: `https://github.com/theleftbit`,
+          },
+          {
             name: `Homepage`,
             url: `https://theleftbit.com`,
           },
