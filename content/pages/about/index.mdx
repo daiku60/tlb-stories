@@ -1,9 +1,27 @@
 ---
 title: About
-slug: "/about"
+slug: /about
+embeddedImagesLocal:
+    - ./img-pier.jpg
+    - ./img-ignasi.jpg
+    - ./img-quique.jpg
 ---
 
 ## Our culture
+
+import { Flex, Box } from 'theme-ui'
+import { getImage, GatsbyImage } from 'gatsby-plugin-image'
+
+<Flex>
+    {props.localImages.map((image) => (
+        <Box p={2} sx={{ flex: '1 1 auto' }}>
+            <GatsbyImage
+                alt="Sam in a destroyed mall"
+                image={getImage(image)}
+            />
+        </Box>
+    ))}
+</Flex>
 
 After some experiences in different startups and mobile-focused companies in Barcelona, these three random guys met working together at Wallapop. There they began to discuss pretty much anything; but above all, they shared their love for food, 🍺, and software.
 
