@@ -15,7 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "cleanStart": "npm run clean && npm start " 
+    "cleanStart": "npm run clean && npm start "
   },
   "dependencies": {
     "@lekoarts/gatsby-theme-minimal-blog": "^4.1.1",
@@ -27,6 +27,7 @@
     "gatsby-plugin-manifest": "^4.1.4",
     "gatsby-plugin-sitemap": "^5.0.0",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.22",
+    "prismjs": "^1.25.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },

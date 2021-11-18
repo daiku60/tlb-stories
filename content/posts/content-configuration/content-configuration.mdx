@@ -13,7 +13,7 @@ We are gonna showcase how we are migrating our cells to the new UIContentConfigu
 
 Here we see a simple cell we had in our code.
 
-```js
+```swift
 public class SimpleCollectionViewCell: UICollectionViewListCell {
 
 	private var titleLabel: UILabel!
@@ -191,8 +191,8 @@ public func configureFor(configuration: Configuration) {
 			}
 	    }()
 	} else {
-		addVideoaskShadow()
-		backgroundColor = Constants.DefaultBackgroundColor
+		addShadow()
+		backgroundColor = .defaultBackgroundColor
 	}
 }
 ```
