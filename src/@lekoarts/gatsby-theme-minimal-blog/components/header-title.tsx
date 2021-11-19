@@ -4,13 +4,17 @@ import { jsx } from 'theme-ui'
 import replaceSlashes from '@lekoarts/gatsby-theme-minimal-blog/src/utils/replaceSlashes'
 import useSiteMetadata from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata'
 import useMinimalBlogConfig from '@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-minimal-blog-config'
-import logo from '../../../../static/logo.svg'
+import TLBLogo from '../../../components/logo'
+import { useColorMode } from 'theme-ui' 
 
 import { Flex, Box } from 'theme-ui'
 
 const HeaderTitle = () => {
     const { siteTitle } = useSiteMetadata()
     const { basePath } = useMinimalBlogConfig()
+    const [colorMode] = useColorMode()
+
+    const isDark = colorMode === `dark`
 
     return (
         <Link
@@ -21,7 +25,7 @@ const HeaderTitle = () => {
             <div sx={{ my: 0, fontWeight: `medium`, fontSize: [3, 4] }}>
                 <Flex>
                     <Box p={2} sx={{ flex: '1 1 auto' }}>
-                        <img src={logo} alt="React Logo" />
+                        <TLBLogo fill={isDark ? 'white' : 'black'} />
                     </Box>
                     <Box p={2} sx={{ flex: '1 1 auto' }}>
                         Stories
