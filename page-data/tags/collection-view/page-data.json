@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---node-modules-lekoarts-gatsby-theme-minimal-blog-core-src-templates-tag-query-tsx",
+    "path": "/tags/collection-view",
+    "result": {"data":{"allPost":{"nodes":[{"slug":"/content-configuration","title":"Content configuration","date":"16.11.2021","excerpt":"Modern CollectionView applied We are gonna showcase how we are migrating our cells to the new UIContentConfiguration technique. Initial…","timeToRead":3,"description":null,"tags":[{"name":"UIKit","slug":"ui-kit"},{"name":"CollectionView","slug":"collection-view"},{"name":"UIContentConfiguration","slug":"ui-content-configuration"}]}]}},"pageContext":{"slug":"collection-view","name":"CollectionView","formatString":"DD.MM.YYYY"}},
+    "staticQueryHashes": ["2744905544","3090400250","318001574"]}
