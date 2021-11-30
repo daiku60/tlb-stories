@@ -160,5 +160,8 @@ module.exports = {
         icon: 'static/favicon.svg'
       }
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ].filter(Boolean),
 }

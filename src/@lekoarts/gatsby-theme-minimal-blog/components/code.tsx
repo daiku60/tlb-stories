@@ -3,10 +3,12 @@ import * as React from "react"
 import Highlight, { defaultProps } from "prism-react-renderer"
 import Prism from "prism-react-renderer/prism"
 import loadable from "@loadable/component"
-import theme from "prism-react-renderer/themes/nightOwl"
+import themeDark from "prism-react-renderer/themes/dracula"
+import themeLight from "prism-react-renderer/themes/github"
 import Copy from "@lekoarts/gatsby-theme-minimal-blog/src/components/copy"
 import useMinimalBlogConfig from "@lekoarts/gatsby-theme-minimal-blog/src//hooks/use-minimal-blog-config"
 import { Language } from "@lekoarts/gatsby-theme-minimal-blog/src/types"
+import { useColorMode } from 'theme-ui' 
 
 (typeof global !== "undefined" ? global : window).Prism = Prism;
 require("prismjs/components/prism-swift");
@@ -75,6 +77,10 @@ const Code = ({
   ...props
 }: CodeProps) => {
   const { showLineNumbers, showCopyButton } = useMinimalBlogConfig()
+  const [colorMode] = useColorMode()
+
+  const isDark = colorMode === `dark`
+  const theme = isDark ? themeDark : themeLight
 
   const [language, { title = `` }] = getParams(blockClassName)
   const shouldHighlightLine = calculateLinesToHighlight(metastring)
