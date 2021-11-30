@@ -14,7 +14,7 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b source",
+    "deploy": "gatsby build && gh-pages -d public -b main",
     "cleanStart": "npm run clean && npm start "
   },
   "dependencies": {
